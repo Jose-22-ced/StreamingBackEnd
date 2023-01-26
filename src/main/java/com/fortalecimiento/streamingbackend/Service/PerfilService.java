@@ -26,6 +26,7 @@ public class PerfilService {
     PerfilRepository perfilRepository;
     @Autowired
     PersonaRepository personaRepository;
+
     PerfilValidator perfilValidator = new PerfilValidator();
 
     /** Funcion que guarda un perfil.
