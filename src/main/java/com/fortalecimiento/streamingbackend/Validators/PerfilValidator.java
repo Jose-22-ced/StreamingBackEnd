@@ -11,8 +11,6 @@ public class PerfilValidator {
         if (!persona.isPresent()){
             return "La persona no existe";
         }else if (persona.get().getPlan().getNumpefil()<persona.get().getPerfils().size()+1) {
-            System.out.printf(persona.get().getPlan().getNumpefil()+"");
-            System.out.printf(persona.get().getPerfils().size()+1+"");
             return "El numero no perfiles no corresponde a su plan";
         }
         return null;

@@ -5,7 +5,6 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 @Getter
 @Setter
@@ -26,12 +25,12 @@ public class PerfilResponse implements Serializable {
 
     private Date fech_mod;
 
-    private PersonaResonse persona;
+    private PersonaResponse persona;
 
     public PerfilResponse() {
     }
 
-    public PerfilResponse(Long idperfil, String nombre, String tipo, String usua_creo, String usua_mod, Date fech_cre, Date fech_mod, PersonaResonse persona) {
+    public PerfilResponse(Long idperfil, String nombre, String tipo, String usua_creo, String usua_mod, Date fech_cre, Date fech_mod, PersonaResponse persona) {
         this.idperfil = idperfil;
         this.nombre = nombre;
         this.tipo = tipo;

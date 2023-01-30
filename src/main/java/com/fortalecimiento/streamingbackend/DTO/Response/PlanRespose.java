@@ -24,12 +24,12 @@ public class PlanRespose implements Serializable {
 
     private Date fech_mod;
 
-    private List<PersonaResonse> personas;
+    private List<PersonaResponse> personas;
 
     public PlanRespose() {
     }
 
-    public PlanRespose(Long idplan, String tipo, int numpefil, String usua_creo, String usua_mod, Date fech_cre, Date fech_mod, List<PersonaResonse> personas) {
+    public PlanRespose(Long idplan, String tipo, int numpefil, String usua_creo, String usua_mod, Date fech_cre, Date fech_mod, List<PersonaResponse> personas) {
         this.idplan = idplan;
         this.tipo = tipo;
         this.numpefil = numpefil;

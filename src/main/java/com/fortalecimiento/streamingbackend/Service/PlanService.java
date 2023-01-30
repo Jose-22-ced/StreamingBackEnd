@@ -2,7 +2,6 @@ package com.fortalecimiento.streamingbackend.Service;
 
 
 import com.fortalecimiento.streamingbackend.DTO.Request.PlanRequest;
-import com.fortalecimiento.streamingbackend.DTO.Response.PersonaResonse;
 import com.fortalecimiento.streamingbackend.DTO.Response.PlanRespose;
 import com.fortalecimiento.streamingbackend.Entity.Plan;
 import com.fortalecimiento.streamingbackend.Repository.PlanRepository;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -2,12 +2,9 @@ package com.fortalecimiento.streamingbackend.Service;
 
 
 import com.fortalecimiento.streamingbackend.DTO.Request.PerfilRequest;
-import com.fortalecimiento.streamingbackend.DTO.Request.PlanRequest;
 import com.fortalecimiento.streamingbackend.DTO.Response.PerfilResponse;
-import com.fortalecimiento.streamingbackend.DTO.Response.PersonaResonse;
-import com.fortalecimiento.streamingbackend.DTO.Response.PlanRespose;
+import com.fortalecimiento.streamingbackend.DTO.Response.PersonaResponse;
 import com.fortalecimiento.streamingbackend.Entity.Perfil;
-import com.fortalecimiento.streamingbackend.Entity.Plan;
 import com.fortalecimiento.streamingbackend.Exceptions.BadRequestException;
 import com.fortalecimiento.streamingbackend.Repository.PerfilRepository;
 import com.fortalecimiento.streamingbackend.Repository.PersonaRepository;
@@ -29,7 +26,7 @@ public class PerfilService {
 
     PerfilValidator perfilValidator = new PerfilValidator();
 
-    /** Funcion que guarda un perfil.
+    /** Funcion que guardar un perfil.
      * @param: PerfilRequest
      * @return: ninguna
      * @author: José Cedeño <jose22ced@gmail.com>
@@ -72,7 +69,7 @@ public class PerfilService {
                 perfilResponse.setUsua_mod(perfil1.getUsua_mod());
                 perfilResponse.setFech_cre(perfil1.getFech_cre());
                 perfilResponse.setFech_mod(perfil1.getFech_mod());
-                perfilResponse.setPersona(new PersonaResonse(
+                perfilResponse.setPersona(new PersonaResponse(
                         perfil1.getPersona().getIdpersona(),
                         perfil1.getPersona().getCorreo(),
                         perfil1.getPersona().getClave(),
@@ -89,7 +86,7 @@ public class PerfilService {
         }
     }
 
-    /** Funcion que busca una persona.
+    /** Funcion que busca un perfil.
      * @param: Long id
      * @return: PerfilResponse
      * @author: José Cedeño <jose22ced@gmail.com>
@@ -106,7 +103,7 @@ public class PerfilService {
             perfilResponse.setUsua_mod(perfils.getUsua_mod());
             perfilResponse.setFech_cre(perfils.getFech_cre());
             perfilResponse.setFech_mod(perfils.getFech_mod());
-            perfilResponse.setPersona(new PersonaResonse(
+            perfilResponse.setPersona(new PersonaResponse(
                     perfils.getPersona().getIdpersona(),
                     perfils.getPersona().getCorreo(),
                     perfils.getPersona().getClave(),

@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 @Getter
 @Setter
-public class PersonaResonse implements Serializable {
+public class PersonaResponse implements Serializable {
 
     private Long idpersona;
 
@@ -29,10 +29,10 @@ public class PersonaResonse implements Serializable {
     private PlanRespose plan;
 
 
-    public PersonaResonse() {
+    public PersonaResponse() {
     }
 
-    public PersonaResonse(Long idpersona, String correo, String clave, String usua_creo, String usua_mod, Date fech_cre, Date fech_mod, List<PerfilResponse> perfils, PlanRespose plan) {
+    public PersonaResponse(Long idpersona, String correo, String clave, String usua_creo, String usua_mod, Date fech_cre, Date fech_mod, List<PerfilResponse> perfils, PlanRespose plan) {
         this.idpersona = idpersona;
         this.correo = correo;
         this.clave = clave;
